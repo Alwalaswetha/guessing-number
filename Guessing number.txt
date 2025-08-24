@@ -1,0 +1,15 @@
+import random
+n=random.randint(1,100)
+chances=5
+print("Guess the number from 1 to 100  and you have 5 chances")
+for i in range(chances):
+    guess=int(input("enter the number you guess:"))
+    if guess==n:
+        print("your guess is correct")
+        break
+    elif guess > n:
+        print("number is smaller than your guessed number")
+    else:
+        print("number is greater than your guessed number")
+else:
+    print("sorry U have not guessed the number in five chances and the number is ",n)
